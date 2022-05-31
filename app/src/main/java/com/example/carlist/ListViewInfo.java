@@ -20,6 +20,8 @@ public class ListViewInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view_info);
 
+        /** CARREGA A LISTA COM AS INFORMAÇÕES */
+        /** UPLOAD THE LIST WITH THE INFORMATION */
         crList = new ArrayList<>();
 
         crList.add(new Car(R.drawable.astra, "Astra", "Chevrolet"));
@@ -35,6 +37,8 @@ public class ListViewInfo extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.listView);
 
+        /** TRANSFERE AS INFORMAÇÕES PARA O ADAPTADOR */
+        /** TRANSFER THE INFORMATION TO THE ADAPTER */
         ListAdapter adapter = new ListAdapter(this, R.layout.layout_my_list_item, crList);
 
         listView.setAdapter(adapter);

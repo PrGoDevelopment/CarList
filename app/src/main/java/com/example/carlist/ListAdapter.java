@@ -31,6 +31,8 @@ public class ListAdapter extends ArrayAdapter<Car>
         this.carList = carList;
     }
 
+    /** PREENCHE O LAYOUT COM AS INFORMAÇÕES PARA FORMAR A LISTA NA TELA */
+    /** FILL OUT THE LAYOUT WITH THE INFORMATION TO FORM THE LIST ON THE SCREEN */
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -59,6 +61,7 @@ public class ListAdapter extends ArrayAdapter<Car>
         return view;
     }
 
+    /** DELETE ITEM */
     private void removeItem(final int position)
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(ctx);
